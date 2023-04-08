@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste React</title>
+  </head>
+  <body id="root">
+    <!-- By using HTML <h1>Vaibhav</h1> -->
+  </body>
+  <!-- Core Library of React -->
+  <script
+    crossorigin
+    src="https://unpkg.com/react@18/umd/react.development.js"
+  ></script>
+  <!-- This below code Gives access us to the Dom Version of react -->
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+  ></script>
+  <!-- By Using Simple JavaScript
+    <script>
+    const heading = document.createElement("h1"); 
+    heading.innerHTML = "Namaste Vaibhav React Start Kardi!";
+    const root = document.getElementById("root");
+    root.appendChild(heading);
+    </script> -->
+
+  <script>
+    const heading = React.createElement("h1", {}, "Radhe Radhe");
+    console.log(heading);
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+
+    //Passing a react Element inside a root
+    root.render(heading);
+    // heading = doument.innerHTML = "Vaibahv";
+  </script>
+</html>
