@@ -1,32 +1,58 @@
-const heading = React.createElement(
-    "h1",
-    // {
-    //   id: "title",
-    // },
-    null,
-    "Heading 1"
-  );
 
-  const heading2 = React.createElement(
-    "h2",
-    // {
-    //   id: "title",
-    // },
-    null,
-    "Heading2"
-  );
+import React from "react"; 
+import ReactDOM from "react-dom/client"; //It is used for dom
 
-  const container = React.createElement(
-    "div",
+//App Layout
+/**Header
+        -> Logo
+        -> Nav Bar/ Nav Items(Right Side)
+        -> Cart
+    *Body*
+        ->SearchBar
+        ->Restaurant List
+          ->Restauranr Card
+            -> Image
+            ->Name
+            ->Rating
+            ->Cusinines
+    *Footer
+      -> Links
+      ->CopyRight */
+const title = (
+  <h1>Food Villa</h1>
+);
+
+//Now this is not a normal variable but a functional component
+const Title = () =>(
+  <h1>Food Villa</h1>
+);
+
+//Composing Components:
+const HeaderComponent = () =>
+{
+  return (
+    <div>
+    
+      
+      {title}
+      {console.log("Mera Naam vaibhav")}
+
+      <Title />
+      <h2>Namste in h2</h2>
+      
+    </div>
+  );
+};
+
+const AppLayout = () =>{
+  return(
     {
-      id: "container",
-    },
-    // If we have to pass Multiple Childrens then we have to pass them as an array
-    [heading, heading2]
-  );
-  console.log(heading);
-  // heading.innerHTML = "Vaibhav Saxena here";
+
+    }
+  )
+}
+
   const root = ReactDOM.createRoot(document.getElementById("root"));
 
-  //Passing a react Element inside a root
-  root.render(container);
+
+  root.render(<HeaderComponent />);
