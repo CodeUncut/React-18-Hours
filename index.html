@@ -16,6 +16,9 @@
       <h1 id="vaibhav">Rohan</h1> -->
     </div>
 
+    <!-- <div style="background-color: red"><h1>Vaibhav</h1></div> -->
+    <!-- <div id="js"></div> -->
+
     <!-- <div id="container">
       <h1>Heading1</h1>
       <h2>Heading2</h2>
@@ -24,15 +27,15 @@
     <!-- By using HTML <h1>Vaibhav</h1> -->
 
     <!-- Core Library of React -->
-    <script
+    <!-- <script
       crossorigin
       src="https://unpkg.com/react@18/umd/react.development.js"
-    ></script>
+    ></script> -->
     <!-- This below code Gives access us to the Dom Version of react -->
-    <script
+    <!-- <script
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-    ></script>
+    ></script> -->
     <!-- By Using Simple JavaScript
     <script>
     const heading = document.createElement("h1"); 
@@ -41,6 +44,46 @@
     root.appendChild(heading);
     </script> -->
     <!-- End of the Day React Elements is an Object-->
-    <script src="App.js"></script>
+    <!-- <script>
+      const heading = document.createElement("h1");
+      heading.innerHTML = "HI I am React";
+      const js = document.getElementById("js");
+      js.appendChild(heading); 
+    </script>-->
+    <script type="module" src="App.js"></script>
   </body>
 </html>
+
+<!-- Bundlers:
+vite
+webpack
+parcel
+
+merge all the js code files into one and make the app production ready-->
+
+<!-- Create React App uses webpack and babel as a bundler, but in out create-react we will use parcel as a bundler-->
+
+<!-- Why do we use npm?
+because our React app is powered by lot of things a lot of packages, suppose we have to
+1.Minify
+  2. Optimization
+  3. Caching
+  4. Clean Console
+  5. Bundle
+this helper packages come inside npm-->
+
+<!--Parcel is a Beast
+
+    There is no official name of npm(package Manager)
+npm install -D parcel 
+npm install --save-dev parcel
+
+This both commands are same, -D is used for developer Dependencies instead of Production.
+
+dev Dependcies means all packages that my project needs -->
+
+<!-- //Imp things about package-lock.json:
+
+
+locks the version
+don't keep it in gitignore-->
